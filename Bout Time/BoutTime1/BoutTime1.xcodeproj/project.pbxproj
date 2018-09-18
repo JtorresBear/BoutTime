@@ -12,6 +12,7 @@
 		AA2165D7215053E400490970 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA2165D5215053E400490970 /* Main.storyboard */; };
 		AA2165D9215053E500490970 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA2165D8215053E500490970 /* Assets.xcassets */; };
 		AA2165DC215053E500490970 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA2165DA215053E500490970 /* LaunchScreen.storyboard */; };
+		AA2165E421510A1C00490970 /* EventsInTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2165E321510A1C00490970 /* EventsInTime.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		AA2165D8215053E500490970 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA2165DB215053E500490970 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA2165DD215053E500490970 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA2165E321510A1C00490970 /* EventsInTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsInTime.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				AA2165D1215053E400490970 /* AppDelegate.swift */,
+				AA2165E321510A1C00490970 /* EventsInTime.swift */,
 				AA2165D3215053E400490970 /* ViewController.swift */,
 				AA2165D5215053E400490970 /* Main.storyboard */,
 				AA2165D8215053E500490970 /* Assets.xcassets */,
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA2165E421510A1C00490970 /* EventsInTime.swift in Sources */,
 				AA2165D4215053E400490970 /* ViewController.swift in Sources */,
 				AA2165D2215053E400490970 /* AppDelegate.swift in Sources */,
 			);
