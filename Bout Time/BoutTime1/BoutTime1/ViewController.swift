@@ -42,6 +42,8 @@ class ViewController: UIViewController {
     var timer = Timer()
     var game = Game()
     var round = 0
+    // helps so that the shake is registered but nothing happens
+    var isShook = false
     
     
    
@@ -54,6 +56,7 @@ class ViewController: UIViewController {
         if(time == 0)
         {
             endRound()
+            isShook = true
         }
         
     }
@@ -136,7 +139,12 @@ class ViewController: UIViewController {
     
     // checks if the device has been shaken, and then ends the round by calling the endRound() function
     override func motionBegan(_ motion: UIEventSubtype, with event: UIEvent?) {
-        endRound()
+        if(!isShook)
+        {
+            endRound()
+            isShook = true
+        }
+        
     }
     
 
@@ -147,7 +155,7 @@ class ViewController: UIViewController {
         nextRoundButton.isHidden = true
         enableButton(isTrue: true)
         shakeLabel.isHidden = false
-        
+        isShook = false
     }
     
     // disables or enables buttons so they can't switch values when the round is over
@@ -232,9 +240,10 @@ class ViewController: UIViewController {
         enableButton(isTrue: true)
         game.score = 0
         shakeLabel.isHidden = false
+        isShook = false
     }
     
-    //plays a sound. the sound is loaded depending on whether the round is correct or not. 
+    //plays a sound. the sound is loaded depending on whether the round is correct or not.
     func playSound(if CorrectOrFalse: Bool)
     {
         var mainUrl: URL?
