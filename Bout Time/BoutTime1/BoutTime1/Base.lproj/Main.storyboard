@@ -177,6 +177,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Shake Device to finished" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="93P-9z-Cgh">
+                                <rect key="frame" x="75" y="621" width="224" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" red="0.19694010416666666" green="0.46355060251111113" blue="0.59124636180833334" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.33076522924722224" blue="0.45433772465555555" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -244,6 +251,7 @@
                         <outlet property="secondDownButton" destination="8kV-1k-jME" id="Rz9-ol-z48"/>
                         <outlet property="secondEvent" destination="uy0-ww-tgs" id="m2a-jl-2zM"/>
                         <outlet property="secondUpButton" destination="eC5-fm-0Kk" id="5Vd-Fi-eoo"/>
+                        <outlet property="shakeLabel" destination="93P-9z-Cgh" id="Xou-Dg-73i"/>
                         <outlet property="thirdDownButton" destination="oUj-3X-bZJ" id="83C-5f-lcS"/>
                         <outlet property="thirdEvent" destination="l8P-5z-brt" id="w4r-cq-Sl2"/>
                         <outlet property="thirdUpButton" destination="HV7-BY-3Wo" id="2d3-jU-QXj"/>
