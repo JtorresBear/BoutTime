@@ -69,6 +69,7 @@ class ViewController: UIViewController {
         //Starts the timer when the game starts
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController.countDownTimer), userInfo: nil, repeats: true)
         nextRoundButton.isHidden = true
+        nextRoundButton.isEnabled = false
         gameOverButton.isHidden = true
         showScoreAndButtons(isHidden: true)
         
