@@ -139,7 +139,7 @@ class ViewController: UIViewController {
     
     
     // checks if the device has been shaken, and then ends the round by calling the endRound() function
-    override func motionBegan(_ motion: UIEventSubtype, with event: UIEvent?) {
+    override func motionBegan(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         if(!isShook)
         {
             endRound()
@@ -272,7 +272,7 @@ class ViewController: UIViewController {
             
         do {
             
-            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category(rawValue: convertFromAVAudioSessionCategory(AVAudioSession.Category.playback)), mode: .default)
             try AVAudioSession.sharedInstance().setActive(true)
             
             player = try AVAudioPlayer(contentsOf: mainUrl!, fileTypeHint: AVFileType.mp3.rawValue)
@@ -319,3 +319,8 @@ class ViewController: UIViewController {
 
 
 
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertFromAVAudioSessionCategory(_ input: AVAudioSession.Category) -> String {
+	return input.rawValue
+}
